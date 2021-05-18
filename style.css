@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html {
+  background-color: #0b090a;
+}
+
+body > h1 {
+  color: #fff;
+  text-align: center;
+  margin: 12px 0;
+}
+
+body > h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 42px;
+}
+
+.treino-a, .treino-b {
+  display: none;
+}
+
+
+.treino-a.ativo{
+  display: block;
+}
+
+.treino-b.ativo {
+  display: block;
+}
+
+.treinos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.treinos span {
+  text-align: center;
+  background: #161a1d;
+  color: #f5f3f4;
+  padding: 22px 64px;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 52px;
+  box-shadow: 0 6px 4px #000;
+
+}
+
+.treinos span.btn-ativo {
+  color: #eb5e28;
+  border: 2px solid #eb5e28;
+}
+
+.card-treino {
+  width: 90vw;
+  background: #161a1d;
+  margin: 12px auto;
+  border-radius: 5px;
+  color: #f5f3f4;
+  box-shadow: 0 6px 4px #000;
+}
+
+.card-treino.finalizado {
+  display: none;
+}
+
+.card-treino img {
+  max-width: 100%;
+}
+
+.card-treino h2 {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.card-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #32ff7e;
+  color: #0b090a;
+  font-weight: bold;
+  font-size: 18px;
+}
